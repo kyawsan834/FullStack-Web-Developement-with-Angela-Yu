@@ -30,6 +30,10 @@ app.get("/about", function(req,res){
     res.send("My name is Angela and I love beer and code.");
 });
 
+app.get("/hobbies",function(req,res){
+    res.send("<ul><li>Coffee</li><li>Code</li><li>Beer</li></ul>");
+});
+
 
 //use the app //add anonymous function
 app.listen(3000,function(){
